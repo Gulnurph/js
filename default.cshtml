@@ -1,0 +1,160 @@
+﻿@using Entities.Concrete
+@model PARAMETRE
+
+
+@*
+<span class="phone pull-center hidden-md hidden-sm" style="font-size:14px">
+    <i class="fa fa-whatsapp" aria-hidden="true" style="color: #008000; line-height: 40px;"></i>
+    <a href="https://api.whatsapp.com/send?phone=+90 545 893 77 83" target="_blank"> Send a message </a>
+</span>
+
+*@
+
+
+@*<a class="fa-whatsapp" href="">Bizimle İletişime Geçin</a>
+
+<script src="~/NewTemplate/assets/js/vendor/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var $awh = $('<a>')
+            .attr('href', 'https://api.whatsapp.com/send?phone=@Model.TEL3&text=Contact Us')
+            .addClass('whatsapp-btn')
+            .text('Contact Us')
+            .on("click", function (e) {
+                e.preventDefault();
+                var $wbtn = $(this);
+                if ($wbtn.hasClass("active")) {
+                    window.open($wbtn.attr('href'));
+                } else {
+                    $wbtn.addClass("active");
+                    setTimeout(function () { $wbtn.removeClass("active"); }, 2500);
+                }
+            });
+        $('body').append($awh);
+    });
+</script>
+*@
+@*<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+9000000000", // Contact Number
+            call_to_action: "Merhaba, Size nasıl yardımcı olabilirim?",
+            position: "left",
+        };
+        var proto = document.location.protocol,
+            host = "getbutton.io",
+            url = proto + "//static." + host;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    })();
+</script>*@
+<style>
+    .whatsapp-btn {
+        width: 50px;
+        padding: 8px 11px;
+        position: fixed;
+        bottom: 70px;
+        left: 10px;
+        background-color: #25d366;
+        border-radius: 25px;
+        color: #fff !important;
+        overflow: hidden;
+        white-space: nowrap;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        transition: all ease 1s;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        -ms-transition: all ease 1s;
+        -o-transition: all ease 1s;
+        z-index: 999;
+    }
+
+        .whatsapp-btn.active {
+            width: 245px;
+        }
+
+        .whatsapp-btn:before {
+            font-family: "FontAwesome";
+            margin-right: 12px;
+            font-size: 32px;
+            font-weight: 400;
+            content: "\f232";
+        }
+</style>
+
+
+<a class="whatsapp-btn" href="">Bizimle İletişime Geçin
+   
+</a>
+
+<script src="~/NewTemplate/assets/js/vendor/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var $awh = $('<a>')
+            .attr('href', 'https://api.whatsapp.com/send?phone=@Model.TEL3&text=Bizimle%20iletisime%20Gecebilirsiniz')
+            .addClass('whatsapp-btn')
+            .text('Nasıl Yardımcı Olabiliriz?')
+            .on("click", function (e) {
+                e.preventDefault();
+                var $wbtn = $(this);
+                if ($wbtn.hasClass("active")) {
+                    window.open($wbtn.attr('href'));
+                } else {
+                    $wbtn.addClass("active");
+                    setTimeout(function () { $wbtn.removeClass("active"); }, 2500);
+                }
+            });
+        $('body').append($awh);
+    });
+</script>
+<script src="~/css/Bootstrap-Cookie-Alert-gh-pages/cookiealert.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+@*<script src="http://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>*@
+
+<!-- JS
+============================================ -->
+<!-- Modernizer JS -->
+@*<script src="~/NewTemplate/assets/js/vendor/modernizr-3.6.0.js"></script>
+<!-- jQuery JS -->
+<script src="~/NewTemplate/assets/js/vendor/jquery-3.6.0.js"></script>
+<!-- Bootstrap JS -->
+<script src="~/NewTemplate/assets/js/vendor/bootstrap.bundle.js"></script>
+<!-- slick Slider JS -->
+<script src="~/NewTemplate/assets/js/plugins/slick.js"></script>
+<!-- Countdown JS -->
+<script src="~/NewTemplate/assets/js/plugins/countdown.js"></script>
+<!-- Nice Select JS -->
+<script src="~/NewTemplate/assets/js/plugins/nice-select.js"></script>
+<!-- jquery UI JS -->
+<script src="~/NewTemplate/assets/js/plugins/jqueryui.js"></script>
+<!-- Image zoom JS -->
+<script src="~/NewTemplate/assets/js/plugins/image-zoom.js"></script>
+<!-- Images loaded JS -->
+<script src="~/NewTemplate/assets/js/plugins/imagesloaded.pkgd.js"></script>
+<!-- mail-chimp active js -->
+<script src="~/NewTemplate/assets/js/plugins/ajaxchimp.js"></script>
+<!-- contact form dynamic js -->
+<script src="~/NewTemplate/assets/js/plugins/ajax-mail.js"></script>
+<!-- google map active js -->
+<script src="~/NewTemplate/assets/js/plugins/google-map.js"></script>
+<!-- Main JS -->
+<script src="~/NewTemplate/assets/js/main.js"></script>
+
+<script src="~/js/shoppingJs.js"></script>
+
+<script src="~/css/Bootstrap-Cookie-Alert-gh-pages/cookiealert.js"></script>*@
+
